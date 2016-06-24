@@ -1,0 +1,89 @@
+@import "mixins.less";
+
+// Media questions
+@small: ~'only screen and (min-width: 768px)';
+@medium: ~'only screen and (min-width: 992px)';
+@large: ~'only screen and (min-width: 1400px)';
+
+// Top separator
+.top-separator {
+  height: 60px;
+}
+
+// White background
+.alt-bg {
+  background: @alternate-bg;
+}
+
+// Section title
+.section-title {
+  margin: 50px 0;
+}
+
+// Section line
+.section-line {
+  font-size: 20px;
+  line-height: 20px;
+  color: @bright-text-color;
+  .clear;
+  .center-text;
+  .v-align;
+  &:before{
+    float: left;
+    .section-line-mix;
+  }
+  &:after{
+    float: right;
+    .section-line-mix;
+  }
+}
+
+.section-line-span {
+  margin: 0 3px;
+  i {
+    .icon(@brand-warning;18px;1);
+  }
+}
+
+// Buttons
+.btn {
+  .upper;
+  font-weight: 700;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  &:focus {
+    outline: none !important;
+  }
+  i {
+    .icon(@bright-text-color;22px;22px);
+    margin-right: 10px;
+    .v-align;
+  }
+  span {
+    .v-align;
+  }
+}
+
+// Columns with no padding
+.no-padding > .row > div[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Fork
+.gh-fork {
+  position: fixed;
+  top: 60;
+  right: 0;
+  border: 0;
+  width: 120px;
+  height: 120px;
+  z-index: 998;
+  opacity: 0.8;
+  .basic-transition;
+  &:hover {
+    opacity: 1;
+    .basic-transition;
+  }
+}

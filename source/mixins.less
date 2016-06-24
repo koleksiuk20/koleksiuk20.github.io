@@ -1,0 +1,128 @@
+@import "variables.less";
+@import "global.less";
+
+// Capital Letters
+.upper {
+  text-transform: uppercase;
+}
+
+// Alignment and Positioning
+.absolute-one-hundred-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.v-align {
+  vertical-align: middle;
+}
+
+.v-align-transform {
+  .relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Padding
+.padding-top-bottom(@p-top;@p-bottom) {
+  padding: @p-top 0 @p-bottom;
+}
+
+// Borders
+.basic-border(@width;@style;@color:@border-color) {
+  border-width: @width;
+  border-style: @style;
+  border-color: @color;
+}
+
+// Lists
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+// Icons
+.icon(@color;@font-size;@line-height:@line-height-base) {
+  color: @color;
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+// Transitions
+.basic-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+// Slider images
+.bg-image(@url) {
+  background-image: @url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+// Shadow
+.shadow(@properties) {
+  box-shadow: @properties;
+}
+
+// Slider Overlay
+.dark-overlay {
+  content: "";
+  z-index: 0;
+  background: none repeat rgba(30,30,30,0.5);
+  .absolute-one-hundred-size
+}
+
+// Section Line
+.section-line-mix {
+  background: @section-line-color;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+  @media @small {
+    width: 48%;
+  }
+}
+
+// Paragraphs
+.paragraph(@font-size: @font-size-base;@line-height:@line-height-base;@color:@paragraph-color) {
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @paragraph-color;
+}
+
+// Flexbox
+.flex-display {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-justify {
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}

@@ -1,0 +1,131 @@
+@import "mixins.less";
+
+// Main header
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: @alternate-bg;
+  z-index: 99;
+  .shadow(0 0 3px 0 rgba(0,0,0,0.2));
+}
+
+// Styles for 60px
+.header-short, .header-short .header-content, .header-short .main-logo, .header-short .nav-main, .header-short .nav-right {
+  height: @header-height-sm;
+}
+
+// Logo styles
+.logo-wrapper {
+  display: table;
+  .main-logo {
+    display: table-cell;
+    .v-align;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+// General main menu styles
+.header-content {
+  ul {
+    .list-style-none;
+    li {
+      float: left;
+      a {
+        color: @menu-text-color;
+        font-weight: 700;
+        text-decoration: none;
+        .upper;
+        .basic-transition;
+        &:hover {
+          color: @menu-text-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// Main Menu
+.nav-main {
+  ul {
+    overflow: hidden;
+    .v-align-transform;
+    li {
+      float: left;
+      line-height: 1.4;
+      a {
+        padding: 0 18px;
+      }
+    }
+  }
+}
+
+.menu-link-active {
+  color: @menu-text-hover-color !important;
+}
+
+// Mobile menu
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  width: 40%;
+  padding: 30px 20px 0 30px;
+  background: @dark-bg;
+  opacity: 0.9;
+  z-index: 999;
+}
+
+.main-nav-list-mobile {
+  .list-style-none;
+  li {
+    width: 80%;
+    .padding-top-bottom(10px; 10px);
+    border-bottom: 1px dotted #d7d8d6;
+    line-height: 1.4;
+    a {
+      padding: 10px 60% 10px 0;
+      color: @bright-text-color;
+      opacity: 0.5;
+      .basic-transition;
+      text-decoration: none;
+      font-size: 20px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.mobile-menu-close {
+  transform: translateY(-20px);
+  i {
+    .icon(@bright-text-color;20px);
+    opacity: 0.5;
+    .basic-transition;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Menu mobile button
+.mobile-nav-button {
+  .v-align-transform;
+  .basic-border(1px;solid;@menu-text-color);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-left: 18px;
+  display: table;
+  &:hover {
+    color: @menu-text-hover-color;
+  }
+  i {
+    .icon(@menu-text-color;21px;23px);
+  }
+}

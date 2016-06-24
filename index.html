@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <title>Kamil Oleksiuk Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="source/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="source/lightbox.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="mobile-menu hidden-sm hidden-md hidden-lg" id="main-nav-mobile">
+    <a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+    <ul class="main-nav-list-mobile">
+        <li><a href="#mobile-slider" class="page-scroll">Home</a></li>
+        <li><a href="#about" class="page-scroll">About</a></li>
+        <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+        <li><a href="#contact" class="page-scroll">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Main container -->
+<div id="main-container">
+
+    <!-- Header -->
+    <header class="main-header alt-bg header-short">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <!-- Logo -->
+                        <div class="logo-wrapper pull-left">
+                            <a href="" class="main-logo">
+                                <img src="images/logo.png" alt="Main logo" />
+                            </a>
+                        </div>
+
+                        <!-- Main menu -->
+                        <nav class="nav-main pull-right" id="main-nav">
+                            <a href="" class="mobile-nav-button hidden-sm hidden-md hidden-lg" id="mobile-icon"><i class="fa fa-bars"></i></a>
+                            <ul class="main-nav-list visible-sm visible-md visible-lg">
+                                <li><a href="#slider" class="menu-link-active page-scroll">Home</a></li>
+                                <li><a href="#about" class="page-scroll">About</a></li>
+                                <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+                                <li><a href="#contact" class="page-scroll">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Header clearfix -->
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header separator -->
+    <div class="top-separator"></div>
+    <div class="clearfix"></div>
+
+    <!-- Fork -->
+    <a href="https://github.com/koleksiuk20">
+        <img class="gh-fork" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on Github" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    </a>
+
+    <!-- Top slider -->
+    <section class="top-slider hidden-xs" id="slider">
+        <div id="top-slider" class="carousel slide" data-ride="carousel">
+
+            <!-- Top slider content -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- First slider -->
+                <div class="item active">
+                    <div class="slide-image" id="slide_one"></div>
+                    <div class="container">
+                        <div class="item-content">
+                            <h1>Hello, I am Kamil</h1>
+                            <h3>I am an awesome Web Developer who has creative visions, many ideas and can bring your concepts to life.</h3>
+                            <a class="btn btn-primary page-scroll" href="#about">
+                                <i class="fa fa-chevron-down" href="#about"></i>
+                                <span href="#about">See more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second slider -->
+                <div class="item">
+                    <div class="slide-image" id="slide_two"></div>
+                    <div class="container">
+                        <div class="item-content">
+                            <h1>Portfolio</h1>
+                            <h3>Check out my beautiful websites and get inspired.</h3>
+                            <a class="btn btn-primary page-scroll" href="#portfolio">
+                                <i class="fa fa-chevron-down" href="#portfolio"></i>
+                                <span href="#portfolio">See more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider controls -->
+
+            <a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#top-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#top-slider" data-slide-to="1"></li>
+            </ol>
+
+        </div>
+    </section>
+
+    <!-- Mobile Slider -->
+    <section class="mobile-slider visible-xs" id="mobile-slider">
+        <div class="container">
+            <div class="item-content">
+                <h1>Hello, I am Kamil</h1>
+                <h3>I am an awesome Web Developer who has creative visions, many ideas and can bring your concepts to life.</h3>
+                <a class="btn btn-primary page-scroll" href="#about">
+                    <i class="fa fa-chevron-down" href="#about"></i>
+                    <span href="#about">See more</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page content -->
+    <div id="main-content">
+
+        <!-- About -->
+        <section class="about alt-bg animatedEntrance" id="about">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- Main box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="main-box">
+                            <h3>Kamil Oleksiuk</h3>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+
+                    <!-- Personal details box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="box">
+                            <span class="icon personal-details-icon"></span>
+                            <h4 class="about-section-title">Personal Details</h4>
+                            <ul class="about-section-list personal-details">
+                                <li>
+                                    <span class="personal-details-title">Nationality</span>
+                                    <p>Polish</p>
+                                </li>
+                                <li>
+                                    <span class="personal-details-title">Location</span>
+                                    <p>Warsaw</p>
+                                </li>
+                                <li>
+                                    <span class="personal-details-title">Age</span>
+                                    <p>26</p>
+                                </li>
+                                <li>
+                                    <span>Availability</span>
+                                    <p>Full-time</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="box">
+                            <span class="icon education-icon"></span>
+                            <h4 class="about-section-title">Education</h4>
+                            <ul class="about-section-list">
+                                <li class="col-sm-6 col-md-12">
+                                    <span class="education-title">Medical University of Warsaw<br>Oct 2009 - Jul 2014</span>
+                                    <p class="education-paragraph">Clinical Laboratory Science<br>study type: Master</p>
+                                </li>
+                                <li class="col-sm-6 col-md-12">
+                                    <span class="education-title">Front-end course<br>Jan 2016 - Jun 2016</span>
+                                    <p class="education-paragraph">Organised by Coders Lab</p>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!-- Work box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="box">
+                            <span class="icon work-icon"></span>
+                            <h4 class="about-section-title">Work</h4>
+                            <ul class="about-section-list">
+                                <li>
+                                    <span class="work-title">Software Tester<br>Nov 2014 - now</span>
+                                    <p class="work-paragraph">Highlights:</p>
+                                    <ul class="work-details-list">
+                                        <li>
+                                            Manual testing mobile applications for: iOS, Android, Windows Phone
+                                        </li>
+                                        <li>
+                                            Manual and automated testing web applications using Selenium + Ruby
+                                        </li>
+                                        <li>
+                                            Preparing software test plans, test strategies, test scenarios, development and execution of test cases based on use cases and requirement documents
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <!-- First skills box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="box">
+                            <span class="icon skills-icon"></span>
+                            <h4 class="about-section-title">Quality Assurance</h4>
+                            <ul class="about-section-list skills-list">
+                                <li>
+                                    <span>Software testing</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">95%</div>
+                                        <div class="progress-bar" id="progress-software" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Mobile/Web apps testing</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">95%</div>
+                                        <div class="progress-bar" id="progress-mobile" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Test automation</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">60%</div>
+                                        <div class="progress-bar" id="progress-automation" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Selenium</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">60%</div>
+                                        <div class="progress-bar" id="progress-selenium" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Cucumber</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">60%</div>
+                                        <div class="progress-bar" id="progress-cucumber" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <!-- Second skills box -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="box">
+                            <span class="icon skills-icon"></span>
+                            <h4 class="about-section-title">Web development</h4>
+                            <ul class="about-section-list skills-list">
+                                <li>
+                                    <span>HTML/CSS</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">85%</div>
+                                        <div class="progress-bar" id="progress-html-css" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Sass/Less</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">80%</div>
+                                        <div class="progress-bar" id="progress-sass-less" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Javascript</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">70%</div>
+                                        <div class="progress-bar" id="progress-js" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>jQuery</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">70%</div>
+                                        <div class="progress-bar" id="progress-jquery" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Ajax</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">50%</div>
+                                        <div class="progress-bar" id="progress-ajax" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Gulp</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">80%</div>
+                                        <div class="progress-bar" id="progress-gulp" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Webpack</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">90%</div>
+                                        <div class="progress-bar" id="progress-webpack" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>PHP</span>
+                                    <div class="progress">
+                                        <div class="progress-bar-value">40%</div>
+                                        <div class="progress-bar" id="progress-php" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <header class="section-title">
+                            <h1>Portfolio</h1>
+                            <div class="section-line">
+                                <span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+                            </div>
+                        </header>
+                    </div>
+
+                    <!-- First project -->
+                    <div class="col-xs-12 col-md-4 portfolio-single">
+                        <div class="portfolio-inner alt-bg">
+                            <div class="portfolio-head">
+                                <a href="images/portfolio_images/bhagaskara.png" rel="lightbox[portfolio]">
+                                    <img src="images/portfolio_images/bhagaskara.png" alt="First project" />
+                                </a>
+                            </div>
+                            <h3><a href="">First project</a></h3>
+                            <div class="portfolio-content">
+                                <p>My very first project. This is how I have begun</p>
+                            </div>
+                            <!--<div class="hor-line"></div>
+                            <a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+                            <a href="" class="comments-link">2 comments</a>
+                            <div class="clearfix"></div>-->
+                        </div>
+                    </div>
+
+                    <!-- Second project -->
+                    <div class="col-xs-12 col-md-4 portfolio-single">
+                        <div class="portfolio-inner alt-bg">
+                            <div class="portfolio-head">
+                                <a href="images/portfolio_images/bhagaskara.png" rel="lightbox[portfolio]">
+                                    <img src="images/portfolio_images/bhagaskara.png" alt="Second project" />
+                                </a>
+                            </div>
+                            <h3><a href="">Second project</a></h3>
+                            <div class="portfolio-content">
+                                <p>First projects using SASS and gulp</p>
+                            </div>
+                            <!--<div class="hor-line"></div>
+                            <a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+                            <a href="" class="comments-link">0 comments</a>
+                            <div class="clearfix"></div>-->
+                        </div>
+                    </div>
+
+                    <!-- More projects -->
+                    <div class="col-xs-12 col-md-4 portfolio-single">
+                        <div class="portfolio-inner alt-bg">
+                            <div class="portfolio-head">
+                                <a href="images/portfolio_images/placeholder.png" rel="lightbox[portfolio]">
+                                    <img src="images/portfolio_images/placeholder.png" alt="More" />
+                                </a>
+                            </div>
+                            <h3><a href="">More</a></h3>
+                            <div class="portfolio-content">
+                                <p>Click here if you want to see more</p>
+                            </div>
+                           <!-- <div class="hor-line"></div>
+                            <a href="" class="pull-right read-more"><i class="fa fa-caret-right"></i></a>
+                            <a href="" class="comments-link">0 comments</a>
+                            <div class="clearfix"></div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact social media -->
+        <section class="contact-icons alt-bg" id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <header class="section-title">
+                            <h2>Contact</h2>
+                            <div class="section-line">
+                                <span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+                            </div>
+                        </header>
+                        <div class="contact-text">
+                            <p>Want to get in touch with me?</p>
+                            <p>Feel free to contact me via Facebook, LinkedIn, Twitter, Github or fill out the form below to send me a message and I will answer you as soon as possible!</p>
+                            <p>All suggestions and comments are most welcome.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid no-padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="contact-logos">
+                            <ul class="logos-list">
+                                <li><a href="https://www.facebook.com/kamil.oleksiuk"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://pl.linkedin.com/in/kamil-oleksiuk-a7044ab6"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/OleksiukKamil"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/koleksiuk20"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <div class="container no-padding">
+                <div class="row">
+
+                    <!-- Contact form -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-wrapper">
+                            <div class="contact-form">
+                                <form action="" role="form" novalidate>
+                                    <div class="form-field">
+                                        <input id="name" placeholder="Name" name="name" type="text" maxlength="50">
+                                        <div class="help-block pull-right">must contain at least 3 characters</div>
+                                    </div>
+                                    <div class="form-field">
+                                        <input id="email" placeholder="Email" name="email" type="email" maxlength="50">
+                                        <div class="help-block pull-right">invalid email</div>
+                                    </div>
+                                    <div class="form-field">
+                                        <input id="subject" placeholder="Subject" name="subject" type="text" maxlength="50">
+                                        <div class="help-block pull-right">must contain at least 3 characters</div>
+                                    </div>
+                                    <div class="form-field">
+                                        <textarea id="message" placeholder="Message" rows="10" cols="30" name="message" maxlength="500"></textarea>
+                                        <div id="counter" class="pull-right"></div>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="map-wrapper embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsc9_0orMHkcRb8JbC7iLC8w&key=AIzaSyAgV5MEV6VQHGw-5n5MMTwe2UAYS4MBS5Y" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid copyright">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 copyright-content">
+                        <p>Copyright 2016 @ Kamil Oleksiuk</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/lightbox.js"></script>
+<script src="vendor/waypoints.min.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+
+</html>
