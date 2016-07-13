@@ -3101,7 +3101,12 @@ input[type="button"].btn-block {
   background: #fff;
 }
 .section-title {
-  margin: 50px 0;
+  margin: 30px 0;
+}
+@media only screen and (min-width: 992px) {
+  .section-title {
+    margin: 50px 0;
+  }
 }
 .section-line {
   font-size: 20px;
@@ -3248,9 +3253,9 @@ input[type="button"].btn-block {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  display: none;
-  width: 40%;
+  right: -200px;
+  display: block;
+  width: 200px;
   padding: 30px 20px 0 30px;
   background: #222532;
   opacity: 0.9;
@@ -3455,7 +3460,17 @@ input[type="button"].btn-block {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 .about .container .row:first-child {
-  margin-top: 50px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .about .container .row:first-child {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about .container .row:first-child {
+    margin-top: 50px;
+  }
 }
 .about .main-box,
 .about h4,
@@ -3467,9 +3482,17 @@ input[type="button"].btn-block {
 .about h4 {
   border-bottom: 1px dotted #d7d8d6;
 }
+.main-box {
+  padding: 20px;
+}
 .main-box h3 {
   margin: 0 0 10px 0;
-  font-size: 52px;
+  font-size: 38px;
+}
+@media only screen and (min-width: 768px) {
+  .main-box h3 {
+    font-size: 48px;
+  }
 }
 .main-box p {
   color: #999999;
@@ -3481,7 +3504,7 @@ input[type="button"].btn-block {
 .box {
   position: relative;
   width: 100%;
-  margin: 0 7px 50px 0;
+  margin: 0 7px 20px 0;
   padding: 20px;
   float: left;
   background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
@@ -3492,10 +3515,15 @@ input[type="button"].btn-block {
   -webkit-box-shadow: 2px 2px 2px 2px #d7d8d6;
   -moz-box-shadow: 2px 2px 2px 2px #d7d8d6;
 }
+@media only screen and (min-width: 768px) {
+  .box {
+    margin: 0 7px 50px 0;
+  }
+}
 .icon {
   position: absolute;
   top: 26px;
-  left: 23px;
+  left: 20px;
   display: block;
   width: 25px;
   height: 26px;
@@ -3513,7 +3541,7 @@ input[type="button"].btn-block {
   background: url('../images/about_images/skills-icon.png');
 }
 .about-section-title {
-  margin: 0 0 15px 45px;
+  margin: 0 0 15px 35px;
   font-size: 28px;
 }
 .about-section-list {
@@ -3523,7 +3551,6 @@ input[type="button"].btn-block {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
-  line-height: 18px;
 }
 .about-section-list li span {
   display: block;
@@ -3533,6 +3560,9 @@ input[type="button"].btn-block {
   color: #555554;
   font-weight: bold;
 }
+.about-section-list li span.work-title {
+  padding-bottom: 10px;
+}
 .about-section-list li p {
   width: 100%;
   float: left;
@@ -3541,11 +3571,15 @@ input[type="button"].btn-block {
   width: 100px !important;
 }
 .personal-details p {
-  width: 150px !important;
+  width: 100px !important;
+  margin-bottom: 0;
+}
+.education-list li {
+  padding-left: 0;
 }
 .work-details-list {
-  -moz-padding-start: 10px;
-  -webkit-padding-start: 10px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
 }
 .progress {
   position: relative;
@@ -3641,7 +3675,17 @@ input[type="button"].btn-block {
   box-shadow: 0 1px 0 rgba(0, 255, 0, 0.1);
   padding: 25px;
   border-radius: 3px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-inner {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .portfolio-inner {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-inner h3 {
   margin-bottom: 25px;
@@ -3674,7 +3718,7 @@ input[type="button"].btn-block {
   width: 100%;
   display: block;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(1);
   transition: opacity 0.3s, transform 0.3s;
 }
@@ -3712,7 +3756,12 @@ input[type="button"].btn-block {
   text-align: center;
 }
 .contact-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-text {
+    margin-bottom: 50px;
+  }
 }
 .contact-text p {
   font-size: 16px;
@@ -3729,7 +3778,8 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-left: 0;
   margin: 0 auto;
-  width: 60%;
+  max-width: 800px;
+  width: 70%;
   display: flex;
   display: -ms-flexbox;
   justify-content: space-between;
@@ -3749,14 +3799,14 @@ input[type="button"].btn-block {
   transition: all 0.2s ease-in-out;
 }
 .logos-list li a:hover {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .form-wrapper {
   padding-left: 15px;
   padding-right: 15px;
 }
 .contact-form {
-  margin: 50px 20px 20px 20px;
+  margin: 30px 20px 20px 20px;
 }
 @media only screen and (min-width: 992px) {
   .contact-form {
@@ -3817,7 +3867,12 @@ form textarea:focus {
   color: #c1c3c4;
 }
 .map-wrapper {
-  margin: 50px 35px 30px 35px;
+  margin: 30px 35px 30px 35px;
+}
+@media only screen and (min-width: 992px) {
+  .map-wrapper {
+    margin: 50px 35px 30px 35px;
+  }
 }
 footer {
   background: #222532;

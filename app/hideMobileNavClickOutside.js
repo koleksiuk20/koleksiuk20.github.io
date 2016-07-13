@@ -3,7 +3,9 @@ function hideMobileNavClickOutside() {
         var menu = $('#main-nav-mobile');
 
         if (!menu.is(e.target) && menu.has(e.target).length === 0){
-            menu.hide();
+            menu.animate({
+                'right': '-200px'
+            });
         }
     });
 }

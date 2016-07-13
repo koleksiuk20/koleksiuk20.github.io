@@ -12,7 +12,13 @@
 .about {
   .container {
     .row:first-child {
-      margin-top: 50px;
+      margin-top: 10px;
+      @media @small {
+        margin-top: 30px;
+      }
+      @media @medium {
+        margin-top: 50px;
+      }
     }
   }
   font-family: @font-family-sans-serif;
@@ -26,9 +32,13 @@
 }
 
 .main-box {
+  padding: 20px;
   h3 {
     margin: 0 0 10px 0;
-    font-size: 52px;
+    font-size: 38px;
+    @media @small {
+      font-size: 48px;
+    }
   }
   p {
     color: #999999;
@@ -42,7 +52,10 @@
 .box {
   .relative;
   width: 100%;
-  margin: 0 7px 50px 0;
+  margin: 0 7px 20px 0;
+  @media @small {
+    margin: 0 7px 50px 0;
+  }
   padding: 20px;
   float: left;
   background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
@@ -57,7 +70,7 @@
 .icon {
   position: absolute;
   top: 26px;
-  left: 23px;
+  left: 20px;
   display: block;
   width: 25px;
   height: 26px;
@@ -80,7 +93,7 @@
 }
 
 .about-section-title {
-  margin: 0 0 15px 45px;
+  margin: 0 0 15px 35px;
   font-size: 28px;
 }
 
@@ -90,7 +103,6 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
-    line-height: 18px;
     span {
       display: block;
       width: 100%;
@@ -98,6 +110,9 @@
       float: left;
       color: #555554;
       font-weight: bold;
+    }
+    span.work-title {
+      padding-bottom: 10px;
     }
     p {
       width: 100%;
@@ -111,13 +126,20 @@
     width: 100px !important;
   }
   p {
-    width: 150px !important;
+    width: 100px !important;
+    margin-bottom: 0;
+  }
+}
+
+.education-list {
+  li {
+    padding-left: 0;
   }
 }
 
 .work-details-list {
-  -moz-padding-start: 10px;
-  -webkit-padding-start: 10px;
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
 }
 
 .progress {
@@ -225,7 +247,13 @@
   .shadow(0 1px 0 rgba(0, 255, 0, 0.1));
   padding: 25px;
   border-radius: 3px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  @media @small {
+    margin-bottom: 30px;
+  }
+  @media @large {
+    margin-bottom: 50px;
+  }
   h3 {
     margin-bottom: 25px;
     font-weight: 600;
@@ -257,7 +285,7 @@
       width: 100%;
       display: block;
       border-radius: 10px;
-      opacity: 0.8;
+      opacity: 0.9;
       transform: scale(1);
       transition: opacity 0.3s, transform 0.3s;
     }
@@ -302,7 +330,10 @@
 }
 
 .contact-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media @medium {
+    margin-bottom: 50px;
+  }
   p {
     .paragraph(16px);
     .center-text;
@@ -317,7 +348,8 @@
 .logos-list {
   .list-style-none;
   margin: 0 auto;
-  width: 60%;
+  max-width: 800px;
+  width: 70%;
   .flex-display;
   .flex-justify;
   li {
@@ -332,7 +364,7 @@
       font-size: 50px;
       .basic-transition;
       &:hover {
-        opacity: 0.3;
+        opacity: 0.5;
       }
     }
   }
@@ -345,7 +377,7 @@
 }
 
 .contact-form {
-  margin: 50px 20px 20px 20px;
+  margin: 30px 20px 20px 20px;
   @media @medium {
     margin: 50px 30px 20px 50px;
   }
@@ -411,5 +443,8 @@ form {
 
 // Map
 .map-wrapper {
-  margin: 50px 35px 30px 35px;
+  margin: 30px 35px 30px 35px;
+  @media @medium {
+    margin: 50px 35px 30px 35px;
+  }
 }

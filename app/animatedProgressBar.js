@@ -8,8 +8,12 @@ function animatedProgressBar() {
                 var topOfWindow = $(window).scrollTop();
 
                 if (imagePos < topOfWindow + 240) {
-                    $('.progress-bar-value').css('visibility', 'visible').addClass('animated slideInLeft');
-                    $('.progress-bar').css('visibility', 'visible').addClass('animated slideInLeft');
+                    $('.progress-bar-value').css('visibility', 'visible').removeClass('slideOutLeft').addClass('animated slideInLeft');
+                    $('.progress-bar').css('visibility', 'visible').removeClass('slideOutLeft').addClass('animated slideInLeft');
+                }
+                else {
+                    $('.progress-bar-value').removeClass('slideInLeft').addClass('slideOutLeft');
+                    $('.progress-bar').removeClass('slideInLeft').addClass('slideOutLeft');
                 }
             });
         });
