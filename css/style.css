@@ -3622,13 +3622,19 @@ input[type="button"].btn-block {
 #progress-mobile.progress-bar:after {
   width: 5%;
 }
-#progress-automation.progress-bar:after {
-  width: 40%;
+#progress-cypress.progress-bar:after {
+  width: 20%;
 }
 #progress-selenium.progress-bar:after {
   width: 40%;
 }
 #progress-cucumber.progress-bar:after {
+  width: 20%;
+}
+#progress-puppeteer.progress-bar:after {
+  width: 25%;
+}
+#progress-nightwatch.progress-bar:after {
   width: 40%;
 }
 #progress-html-css.progress-bar:after {
@@ -3647,13 +3653,10 @@ input[type="button"].btn-block {
   width: 50%;
 }
 #progress-gulp.progress-bar:after {
-  width: 20%;
+  width: 50%;
 }
 #progress-webpack.progress-bar:after {
-  width: 10%;
-}
-#progress-php.progress-bar:after {
-  width: 60%;
+  width: 40%;
 }
 .progress-bar-value {
   position: absolute;
