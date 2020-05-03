@@ -3503,10 +3503,12 @@ input[type="button"].btn-block {
 }
 .box {
   position: relative;
+  height: 300px;
   width: 100%;
   margin: 0 7px 20px 0;
   padding: 20px;
   float: left;
+  overflow: scroll;
   background: url('../images/about_images/corner-dot.png') no-repeat 97% 3% #fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
